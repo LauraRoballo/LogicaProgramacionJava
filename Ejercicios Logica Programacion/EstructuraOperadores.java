@@ -12,8 +12,6 @@
  * DIFICULTAD EXTRA (opcional):
  * Crea un programa que imprima por consola todos los números comprendidos
  * entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
- *
- * Seguro que al revisar detenidamente las posibilidades has descubierto algo nuevo.
  */
 
 public class EstructuraOperadores {
@@ -38,14 +36,16 @@ public class EstructuraOperadores {
         System.out.println("Operador logico || O " + (T || F));
         System.out.println("Operador logico !NOT " + (!T));
 
+        int numUno = 15, numDos = 28;
+
         System.out.println("\n---Operadores de relación ---\n");
         // operadores relacionales
-        System.out.println("El resultado de 40 > (mayor) 30 es: " + (numeroUno > numeroDos));
-        System.out.println("El resultado de 40 < (menor) 30 es: " + (numeroUno < numeroDos));
-        System.out.println("El resultado de 40 == (igual) 30 es: " + (numeroUno == numeroDos));
-        System.out.println("El resultado de 40 != (desigualdad) 30 es: " + (numeroUno != numeroDos));
-        System.out.println("El resultado de 40 >= (mayor igual) 30 es: " + (numeroUno >= numeroDos));
-        System.out.println("El resultado de 40 <= (menor igual) 30 es: " + (numeroUno <= numeroDos));
+        System.out.println("El resultado de 40 > (mayor) 30 es: " + (numUno > numDos));
+        System.out.println("El resultado de 40 < (menor) 30 es: " + (numUno < numDos));
+        System.out.println("El resultado de 40 == (igual) 30 es: " + (numUno == numDos));
+        System.out.println("El resultado de 40 != (desigualdad) 30 es: " + (numUno != numDos));
+        System.out.println("El resultado de 40 >= (mayor igual) 30 es: " + (numUno >= numDos));
+        System.out.println("El resultado de 40 <= (menor igual) 30 es: " + (numUno <= numDos));
 
         //asignacion simple
         System.out.println("\n---Operadores de asignación ---\n");
@@ -151,6 +151,19 @@ Trabajan con número convertido a binario (0 y 1)
         Object valor = 100;
         System.out.println("\n¿valor es un numero? " + (valor instanceof Integer)); // true
         System.out.println("¿valor es un texto? " + (valor instanceof String));  // false
+
+        // Condicionales, iterativas, excepciones
+
+        //  * DIFICULTAD EXTRA
+
+        System.out.println("\n---Ejercicio extra---\n");
+
+        for (int i =10; i<=50; i++){
+            if(i%2==0 && i!=16 && i%3!=0){
+                System.out.println(i);
+            }
+        }
+
 
 
     }
