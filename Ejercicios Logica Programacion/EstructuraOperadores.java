@@ -152,7 +152,6 @@ Trabajan con número convertido a binario (0 y 1)
         System.out.println("\n¿valor es un numero? " + (valor instanceof Integer)); // true
         System.out.println("¿valor es un texto? " + (valor instanceof String));  // false
 
-        // Condicionales, iterativas, excepciones
 
         //  * DIFICULTAD EXTRA
 
