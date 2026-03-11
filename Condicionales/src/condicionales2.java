@@ -11,5 +11,20 @@ public class condicionales2 {
         System.out.println("Escriba un número");
         int numberOne = sc.nextInt();
 
+        System.out.println("Escriba un número");
+        int numberTwo = sc.nextInt();
+
+        int result = numberOne/numberTwo;
+
+        if (numberTwo == 0) {
+
+         System.out.println("No se puede dividir en 0");
+
+        } else {
+         System.out.println("El resultado de la division es: "+result);
+     }
+
+
+
     }
 }
