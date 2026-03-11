@@ -1,3 +1,9 @@
+/**
+ * Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al
+ * usuario por la contraseña e imprima por pantalla si la contraseña introducida
+ * por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
+ */
+
 import java.util.Scanner;
 
 public class condicionales1 {
@@ -5,15 +11,14 @@ public class condicionales1 {
         public static void main( String[] args){
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("******* Condicionales *******");
+            String definida = "Hola123";
+            System.out.println("Ingrese una contraseña: ");
+            String contrasena = sc.nextLine();
 
-            System.out.println("Digite un número");
-            int numero = sc.nextInt();
-
-            if (numero >= 18) {
-                System.out.println("Es mayor de edad");
+            if (contrasena.equalsIgnoreCase(definida)){
+                System.out.println("La contraseña es correcta");
             } else {
-                System.out.println("Usted no es mayor de edad");
+                System.out.println("La contraseña no es correcta");
             }
 
         }
