@@ -31,11 +31,11 @@ public class condicionales9 {
         // tipo B
 
         if (Character.toUpperCase(tipoUva)=='B' && tamanoUva==1){
-            double valorFinB1 = valorUvaB + 0.30;
+            double valorFinB1 = valorUvaB - 0.30;
             System.out.println("El valor del kilo es: "+valorFinB1);
 
         } else if (Character.toUpperCase(tipoUva)=='B' && tamanoUva==2){
-            double valorFinB2 = valorUvaB + 0.50;
+            double valorFinB2 = valorUvaB - 0.50;
             System.out.println("El valor del kilo es: "+valorFinB2);
         }
         else {
